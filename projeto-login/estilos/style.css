@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body { 
+    background-color: #5F2C82;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#login { 
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 545px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+div#img {
+    height: 200px;
+    background: #5F2C82 url(../imagens/metal.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    display: block;
+}
+
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section > p {
+    font-size: small;
+    padding: 5px; 
+}
+
+div.container {
+    background-color: #5F2C82;
+    border-radius: 10px;
+    margin: 5px
+}
+
+span.material-icons { 
+    color: white; 
+    width: 40px;
+    padding: 5px;
+}
+
+input.campo {
+    border-radius: 8px;
+    background: #94CFCD;
+    border: none;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translate(-4px, -8px);
+}
+
+input:focus-within {
+    background-color: white;
+    border: none;
+}
+
+input#btn1 {
+    display: block;
+    color: white;
+    background-color: #53aaa7;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 40px;
+}
+
+input#btn1:hover {
+    background-color: #1b4746;
+    cursor: pointer
+}
+
+a#btn2 {
+    display: block;
+    color: #53aaa7;
+    background-color: white;
+    border: 0.5px solid #53aaa7;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: small;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+a#btn2:hover {
+    background-color: #85e2df;
+    cursor: pointer
+}
+
+span#icone-email {
+    color: #53aaa7;
+}
